@@ -44,6 +44,17 @@ class _VoiceCallPageState extends State<VoiceCallPage>{
                fontSize: 15,
              ),
              ),
+             SizedBox(height: 20,),
+             ClipRRect(
+               borderRadius: BorderRadius.circular(200),
+               child: Image.asset('images/profile.jpg',
+               fit: BoxFit.fitHeight,
+               height: 200,
+               width: 200,),
+               
+             )
+
+
            ]
          ),
       ),
