@@ -88,6 +88,8 @@ class _VoiceCallPageState extends State<VoiceCallPage> {
                       onPressed: null,
                       elevation: 20,
                       shape: CircleBorder(side:BorderSide(color: Colors.red)),
+                      child: Icon(Icons.call_end, color:Colors.red),
+                      backgroundColor: Colors.red[100],
                     )
               ]),
         ),
