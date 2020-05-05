@@ -1,4 +1,6 @@
+import 'package:call_app/functional_buttons.dart';
 import 'package:flutter/material.dart';
+
 
 class VoiceCallPage extends StatefulWidget {
   @override
@@ -77,21 +79,16 @@ class _VoiceCallPageState extends State<VoiceCallPage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisSize: MainAxisSize.min,
-                        children: <Widget>[
-                          RawMaterialButton(
-                            onPressed: null,
-                            splashColor: Colors.deepPurpleAccent,
-                            fillColor: Colors.white,
-                            elevation: 20.0,                            
-                            shape: CircleBorder(),
-                            child: Icon(Icons.mic_off,size: 30, color: Colors.deepPurpleAccent,),
-                        )],
-                      )
-                    ])
+                      FunctionalButton(title: 'Speaker',icon: Icons.phone_in_talk,onPressed: null,),
+                      FunctionalButton(title: 'Video Call',icon: Icons.mic_off,onPressed: null,),
+                      FunctionalButton(title: 'Mute',icon: Icons.mic_off,onPressed: null,)
+                    ]),
+                    SizedBox(height: 100,),
+                    FloatingActionButton(
+                      onPressed: null,
+                      elevation: 20,
+                      shape: CircleBorder(side:BorderSide(color: Colors.red)),
+                    )
               ]),
         ),
       ),
