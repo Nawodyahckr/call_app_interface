@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Lets Talk',
       theme: ThemeData(
+        brightness: Brightness.light,
         primarySwatch: Colors.blue,
       ),
       home: VoiceCallPage(),
